@@ -9,41 +9,53 @@
 </head>
 
 <body>
-
+<div class="loader-body" id="loader">
+	<div class="loader"></div>
+</div>
 <div class="container-all">
 
 <header>
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <a class="navbar-brand" href="#"><img src="<?php ?>" alt=""></a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse" id="navbarNavDropdown">
-    <ul class="navbar-nav">
-      <li class="nav-item active">
-        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Features</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Pricing</a>
-      </li>
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Dropdown link
-        </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-          <a class="dropdown-item" href="#">Action</a>
-          <a class="dropdown-item" href="#">Another action</a>
-          <a class="dropdown-item" href="#">Something else here</a>
+  
+<nav class="navbar navbar-expand-md navbar-light" role="navigation">
+  <div class="container-menu">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <a class="navbar-brand" href="/oncomedic"> <img src="<?php echo get_template_directory_uri().'/assets/src/img/Oncomedic-01.png'; ?> " alt="<?php wp_title(); ?>" title="<?php wp_title(); ?>"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-controls="bs-example-navbar-collapse-1" aria-expanded="false" aria-label="<?php esc_attr_e( 'Toggle navigation', 'your-theme-slug' ); ?>">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    
+    
+        <?php
+        wp_nav_menu( array(
+            'theme_location'    => 'header-menu',
+            'depth'             => 3,
+            'container'         => 'div',
+            'container_class'   => 'collapse navbar-collapse',
+            'container_id'      => 'bs-example-navbar-collapse-1',
+            'menu_class'        => 'nav navbar-nav',
+            'fallback_cb'       => 'WP_Bootstrap_Navwalker::fallback',
+            'walker'            => new WP_Bootstrap_Navwalker(),
+        ) );
+        ?>
+        <div class="social-buttons">
+        <div class="table">
+          <div class="table-cell">
+            <img src="<?php echo get_template_directory_uri().'/assets/src/img/Icon awesome-facebook.svg'?>" alt="">
+          </div>
+          <div class="table-cell">
+            <img src="<?php echo get_template_directory_uri().'/assets/src/img/Icon awesome-whatsapp.svg'?>" alt="">
+          </div>
+          <div class="table-cell">
+           <img src="<?php echo get_template_directory_uri().'/assets/src/img/Icon material-email.svg'?>" alt="">
+          </div>
         </div>
-      </li>
-    </ul>
+      </div>
   </div>
+
 </nav>
 
 </header>
+
  
 
 
