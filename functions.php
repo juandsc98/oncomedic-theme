@@ -30,4 +30,18 @@ function menu_main(){
 }
 add_action('init', 'menu_main');
 
+function oncomedic_widgets(){
+    register_sidebar(array(
+        'name' => 'Secciones generales',
+        'id' => 'seccion_general',
+        'before_widget'=>'<div class="widget">',
+        'after_widget' => '</div>'
+        
+    ));
+}
+
+add_action('widgets_init', 'oncomedic_widgets');
+
+
+
 

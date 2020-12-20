@@ -9,10 +9,22 @@ body{
     margin: 15px;
     font-size: 15px!important;
     font-family: 'Poppins', sans-serif!important;
+    color:rgba(0,0,0,.7)!important;
 }
 
 header{
     z-index:999;
+}
+
+.title{
+    background:linear-gradient(90deg, #1a753a 40%, #7bb63e 100%);
+    padding-top:12px;
+    padding-bottom:12px
+}
+
+.title .container h1{
+    color: #fff!important;
+    font-weight: 700!important;
 }
 .semi-circulo {
     z-index:-1;
@@ -24,6 +36,48 @@ header{
     /* border: 2px solid #555; */
     background:rgba(189,189,189,0.3);
     border-radius: 0 0 100% 100%;
+    
+}
+
+.social-footer{
+    margin:auto;
+    width:15%;
+    padding:15px;
+    padding-left: 25px!important;
+    padding-right: 25px!important;
+  
+    border-radius:15px;
+    background-color: #fff!important;
+    -webkit-box-shadow: 0px -1px 29px -6px rgba(189,189,189,1);
+    -moz-box-shadow: 0px -1px 29px -6px rgba(189,189,189,1);
+    box-shadow: 0px -1px 29px -6px rgba(189,189,189,1);
+   
+
+}
+
+.social-footer .table{
+    margin:auto;
+   
+}
+
+
+.social-footer .table .table-cell img{
+    margin-left:5px;
+    margin-right:5px;
+   
+}
+
+
+
+.semi-circulo-up {
+
+    margin:auto;
+    width: 100%;
+    height: 150vh;
+    margin-bottom:-90vh;
+    /* border: 2px solid #555; */
+    background:rgba(189,189,189,0.3);
+    border-radius: 100% 100% 0 0;
     
 }
 
@@ -71,6 +125,9 @@ header{
 	animation: 1s spin infinite linear;
 
 }
+
+
+
 .loader-body.done {
 	visibility: hidden;
 	opacity: 0;
@@ -127,7 +184,6 @@ header{
     position:relative;
     margin: 20px;
     overflow: hidden;
-    padding-top:20px; 
     border-radius:25px;
     -webkit-box-shadow: 0px -1px 29px -6px rgba(189,189,189,1);
     -moz-box-shadow: 0px -1px 29px -6px rgba(189,189,189,1);
@@ -195,15 +251,15 @@ header{
 
 @media screen and (min-width: 320px) {
 body {
-      font-size: 11px!important;
+      font-size: 12px!important;
     }
 
     h1{
-        font-size: 1.7rem!important
+        font-size: 1.4rem!important
     }
 
     h2{
-        font-size: 1.4rem!important
+        font-size: 1.2rem!important
     }
 
     h3{
@@ -212,22 +268,34 @@ body {
 
     .container-all{
         margin: 7px;
-    padding-top:5px;  
+
     border-radius:10px;
     }
   }
 @media screen and (min-width: 1000px) {
     body {
-        font-size: 12px!important;
+        font-size: 15px!important;
       }
 
     .container-all{
         margin: 20px;
-        padding-top:20px;  
+
         border-radius:25px;
 
     
   }
+
+  h1{
+    font-size: 1.9rem!important
+}
+
+h2{
+    font-size: 1.7rem!important
+}
+
+h3{
+    font-size: 1.3rem!important
+}
 }
 
 @media screen and (min-width: 1360px) {
@@ -237,10 +305,33 @@ body {
 
     .container-all{
         margin: 20px;
-        padding-top:20px;  
         border-radius:25px;
 
     
   }
+
+  h1{
+    font-size: 2.1rem!important
+}
+
+h2{
+    font-size: 1.9rem!important
+}
+
+h3{
+    font-size: 1.5rem!important
+}
+}
+
+@media screen and (min-width: 1660px) {
+    .semi-circulo {
+        margin-top:-95vh;
+
+        
+    }
+
+    .semi-circulo-up{
+        margin-bottom:-95vh;
+    }
 }
 

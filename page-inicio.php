@@ -5,6 +5,7 @@
 <div class="semi-circulo"></div>
   <!-- Swiper -->
   <br>
+  
  <div class=" container-sm">
     <div class="swiper-container ">
     <div class="swiper-wrapper">
@@ -31,7 +32,6 @@
  </div>
 
 <?php while(have_posts()): the_post(); ?>
-
 
 
 <?php the_content(); ?>
