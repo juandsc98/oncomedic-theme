@@ -8,6 +8,9 @@
     </div>
 </div>
 <br>
+<div class="semi-circulo-rigth-page"></div>
+<div class="semi-circulo-left-page"></div>
+
 <?php the_content(); ?>
 <br>
 <?php endwhile; ?>

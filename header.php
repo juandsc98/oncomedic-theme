@@ -19,7 +19,7 @@
 <nav class="navbar navbar-expand-md navbar-light" role="navigation">
   <div class="container-menu">
     <!-- Brand and toggle get grouped for better mobile display -->
-    <a class="navbar-brand" href="/oncomedic"> <img src="<?php echo get_template_directory_uri().'/assets/src/img/Oncomedic-01.png'; ?> " alt="<?php wp_title(); ?>" title="<?php wp_title(); ?>"></a>
+    <a class="navbar-brand" href="/oncomedic"> <img src="<?php echo get_template_directory_uri().'/assets/src/img/logo.png'; ?> " alt="<?php wp_title(); ?>" title="<?php wp_title(); ?>"></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-controls="bs-example-navbar-collapse-1" aria-expanded="false" aria-label="<?php esc_attr_e( 'Toggle navigation', 'your-theme-slug' ); ?>">
         <span class="navbar-toggler-icon"></span>
     </button>
